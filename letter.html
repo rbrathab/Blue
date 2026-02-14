@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letter 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>A Poem For You 💖</h1>
+
+<div class="envelope-wrapper" onclick="openEnvelope()">
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+  </div>
+</div>
+
+<div id="blurLayer" class="blur-overlay"></div>
+
+<div class="fullscreen-letter" id="fullLetter">
+  <div class="letter-content">
+    <button class="close-btn" onclick="closeLetter()">✖</button>
+    <p id="typingText"></p>
+  </div>
+</div>
+
+<a href="index.html" class="back-letter">Back 💖</a>
+<audio id="bgMusic" src="assets/music/blue.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
