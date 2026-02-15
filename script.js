@@ -193,3 +193,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const caption = document.getElementById("carouselCaption");
   if (caption) caption.innerText = captions[0];
 });
+
+function showPage(id) {
+  document.querySelectorAll(".page").forEach(p => {
+    p.style.display = "none";
+  });
+
+  document.getElementById(id).style.display = "block";
+}
